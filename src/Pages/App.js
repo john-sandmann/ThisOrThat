@@ -53,7 +53,7 @@ class App extends Component {
     if (this.state.shouldLoadQuestion) {
       console.log(this.state.votes_opt_1);
       return <div className='question'>
-        <div style={{'textAlign': "center"}}>
+        <div style={{ 'textAlign': "center" }}>
           <h1>{this.state.question}</h1>
         </div>
         <br />
@@ -125,7 +125,9 @@ class App extends Component {
       <div className="App">
         {this.renderLoadingGIF()}
         {this.renderQuestion()}
-        {this.renderNextButton()}
+        <div style={{ 'textAlign': "center" }}>
+          {this.renderNextButton()}
+        </div>
         {this.renderNumberOfPeopleThatAnswered()}
         {this.renderError()}
       </div>
