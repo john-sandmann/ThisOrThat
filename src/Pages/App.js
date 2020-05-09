@@ -53,7 +53,9 @@ class App extends Component {
     if (this.state.shouldLoadQuestion) {
       console.log(this.state.votes_opt_1);
       return <div className='question'>
-        <h1>{this.state.question}</h1>
+        <div style={{'textAlign': "center"}}>
+          <h1>{this.state.question}</h1>
+        </div>
         <br />
         <br />
         <br />
