@@ -64,7 +64,7 @@ class App extends Component {
           <Button
             onClick={
               () => {
-                this.setState({ shouldRenderAnswers: true });
+                this.setState({ shouldRenderAnswers: true, votes_opt_1: votes_opt_1 + 1 });
                 this.incrementSelectedThisOrThat(this.state.votes_opt_1 + 1, this.state.votes_opt_2, this.state.id);
               }
             }
@@ -79,8 +79,8 @@ class App extends Component {
           <Button
             onClick={
               () => {
-                this.setState({ shouldRenderAnswers: true });
-                this.incrementSelectedThisOrThat(this.state.votes_opt_1, this.state.votes_opt_2 + 1, this.state.id);
+                this.setState({ shouldRenderAnswers: true, votes_opt_2: votes_opt_2 + 1});
+                this.incrementSelectedThisOrThat(this.state.votes_opt_1, this.state.votes_opt_2, this.state.id);
               }
             }
             variant="danger" style={{ 'float': 'right', "marginRight": "50px", "padding": '30px', "fontSize": "30px" }}
