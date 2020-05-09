@@ -5,3 +5,8 @@
 ![First image](thisorthat1.png)
 
 ![Second image](thisorthat2.png)
+
+### Tecnologies used:
+* ReactJS
+* NodeJS
+* MySQL 
