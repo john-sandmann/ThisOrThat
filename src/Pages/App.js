@@ -127,8 +127,8 @@ class App extends Component {
         {this.renderQuestion()}
         <div style={{ 'textAlign': "center" }}>
           {this.renderNextButton()}
+          {this.renderNumberOfPeopleThatAnswered()}
         </div>
-        {this.renderNumberOfPeopleThatAnswered()}
         {this.renderError()}
       </div>
     );
